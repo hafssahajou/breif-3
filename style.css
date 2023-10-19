@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home-page {
+    background-image: url(pexels-cup-of-couple-6177588.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.text h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #999; 
+    margin-right: 80px;
+}
+
+.btn-VIEW-PROJECT {
+    background-color: #ffffff00;
+    padding: 10px 33px;
+    border-radius: 5px;
+    border: 2px solid #333; 
+    display: inline-block; 
+    margin-top: 50%;
+}
+
+.btn-VIEW-PROJECT a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.textblack h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    margin-left: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.backgroundimg {
+    position: absolute;
+    z-index: -1;
+}
+
+.logo img {
+    margin-top: 50px;
+    width: 10vh;
+    height: 10vh;
+}
+
+.menu {
+    display: flex;
+    margin-top: 50px;
+}
+
+.menu li {
+    font-size: 62.5%;
+    margin: 0 40px;
+    list-style: none;
+}
+
+.menu li a {
+    font-size: 14px;
+    text-decoration: 0;
+    color: #999;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+ .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.image img {
+    width: 50vh;
+    height: 70vh;
+    margin-top: 100px;
+    margin-left: 400px;
+    transition: 0.5 ease;
+
+}
+
+.image img:hover {
+    transform: scale(1.1);
+}
