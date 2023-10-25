@@ -21,11 +21,55 @@ function toggleAnswer(answer) {
     }
 }
 //burger menu
-function showSidebar() {
-    const sideBar = document.querySelector('.sideBar')
-    sideBar.style.display = 'flex'
-}
-function hideSideBar() {
-    const sideBar = document.querySelector('.sideBar')
-    sideBar.style.display = 'none'
-}
+const humberger = document.querySelector(".humberger");
+const navmenu = document.querySelector(".menu1");
+
+humberger.addEventListener("click",()=>{
+    humberger.classList.toggle("active");
+    navmenu.classList.toggle("active");
+})
+document.querySelectorAll(".menu1 li").forEach(n=> n.addEventListener("click",()=>{
+     humberger.classList.remove("active");
+     navmenu.classList.remove("active");
+}));
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('.right-contact');
+    form.addEventListener('submit', function(event) {
+        var fullName = document.getElementById('name').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var email = document.getElementById('email').value;
+       
+        var fullNameRegex = /^[A-Za-z\s']{3,}$/;
+        var messageRegex = /^[A-Za-z\s']{3,}$/;
+        var subjectRegex = /^[A-Za-z\s']{3,}$/;
+        var emailRegex = /^\S+@\S+.\S+$/;
+
+        if (!fullNameRegex.test(fullName)) {
+            alert("Please enter a valid full name (minimum 3 characters).");
+            event.preventDefault();
+            return;
+
+        }
+        if (!messageRegex.test(message)) {
+            alert("Please enter a valid full name (minimum 3 characters).");
+            event.preventDefault();
+            return;
+
+        }
+        if (!subjectRegex.test(subject)) {
+            alert("Please enter a valid full name (minimum 3 characters).");
+            event.preventDefault();
+            return;
+
+        }
+
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            event.preventDefault();
+            return;
+        }
+
+    });
+
+});
