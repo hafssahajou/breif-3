@@ -12,19 +12,32 @@
 </head>
 
 <body>
+    <nav>
+        <Section class="container1">
+        <ul class="sideBar">
+          <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+
+        </ul>
+        <ul>
+          <li><img src="Images/Navlogo.png" alt=""></li>
+          <li class="hideOnMobil"><a href="index.html">Home</a></li>
+          <li class="hideOnMobil"><a href="Menu.html">Menu</a></li>
+          <li class="hideOnMobil"><a href="Contact.html">Contact</a></li>
+          <li class="hideOnMobil"><a href="AboutUs.html">About Us</a></li>
+
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg></a></li>
+        </ul>
+      </Section>
+      </nav>
     <section class="home-page">
-        <header>
-            <div class="logo">
-                <img src="logopng.png" alt="Architecte">
-            </div>
-            <ul class="menu">
-                <li><a href="#">MAIN</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT US </a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </header>
+        
+    
         <div class="container">
             <div class="text">
                 <div>
@@ -37,18 +50,50 @@
                 </div>
                 <div class="btn-VIEW-PROJECT"><a href="index.html">VIEW PROJECTS</a></div>
             </div>
-           
         </div>
     </section>
-    <div class="row">
-            <div><img src="About-2.png" alt="Architecte"></div>
-            <div><img src="About-1.png" alt="Architecte"></div>
-            
-        </div>
 
-    
-    
+
+    <div class="row-section" id="About">
+
+        <div class="left-row">
+            <img src="Group 95.png" alt="Architecte">
+        </div>
+        <div class="right-row">
+            <div class="tex">
+
+                <h1>ABOUT</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <div class="btn-view-more"><a href="index.html">view more</a></div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <div class="footer-content">
+            <div class="logoo">
+                <img src="Screenshot_2023-10-20_111341-removebg-preview.png" alt="Architecte">
+            </div>
+            <div class="contact-info">
+                <h3>Contactez-nous</h3>
+                <p>Architecte XYZ</p>
+                <p>Adresse : 123 Rue de l'Architecture</p>
+                <p>Téléphone : 456-789-0123</p>
+            </div>
+            <div class="social-media">
+                <h3>Suivez-nous</h3>
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2023 Architecte XYZ. Tous droits réservés.</p>
+    </footer>
+    </div>
+<script src="app.js"></script>
 </body>
 
 </html>
